@@ -12,9 +12,14 @@
 		786A45A52005BD3E00E34BB2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786A45A32005BD3E00E34BB2 /* Main.storyboard */; };
 		786A45A72005BD3E00E34BB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 786A45A62005BD3E00E34BB2 /* Assets.xcassets */; };
 		786A45AA2005BD3E00E34BB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 786A45A82005BD3E00E34BB2 /* LaunchScreen.storyboard */; };
+		786A45B22005BDFD00E34BB2 /* UAVProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786A45B12005BDFD00E34BB2 /* UAVProgressHUD.swift */; };
+		B32724B1C7B8FD721531ED53 /* Pods_HUD_D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 448830201A0757DD5AE90294 /* Pods_HUD_D.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		448830201A0757DD5AE90294 /* Pods_HUD_D.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HUD_D.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6004A3D1592C451EE4886F6C /* Pods-HUD_D.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUD_D.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HUD_D/Pods-HUD_D.debug.xcconfig"; sourceTree = "<group>"; };
+		70BA189872ACEE666309FDE1 /* Pods-HUD_D.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HUD_D.release.xcconfig"; path = "Pods/Target Support Files/Pods-HUD_D/Pods-HUD_D.release.xcconfig"; sourceTree = "<group>"; };
 		786A459C2005BD3E00E34BB2 /* HUD_D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HUD_D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		786A459F2005BD3E00E34BB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		786A45A12005BD3E00E34BB2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		786A45A62005BD3E00E34BB2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		786A45A92005BD3E00E34BB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		786A45AB2005BD3E00E34BB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		786A45B12005BDFD00E34BB2 /* UAVProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAVProgressHUD.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B32724B1C7B8FD721531ED53 /* Pods_HUD_D.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		299CEC8A856B61811A5B1B8B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				448830201A0757DD5AE90294 /* Pods_HUD_D.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		786A45932005BD3E00E34BB2 = {
 			isa = PBXGroup;
 			children = (
 				786A459E2005BD3E00E34BB2 /* HUD_D */,
 				786A459D2005BD3E00E34BB2 /* Products */,
+				CEF5ED47D1494A04E03BD0EB /* Pods */,
+				299CEC8A856B61811A5B1B8B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +73,22 @@
 			children = (
 				786A459F2005BD3E00E34BB2 /* AppDelegate.swift */,
 				786A45A12005BD3E00E34BB2 /* ViewController.swift */,
+				786A45B12005BDFD00E34BB2 /* UAVProgressHUD.swift */,
 				786A45A32005BD3E00E34BB2 /* Main.storyboard */,
 				786A45A62005BD3E00E34BB2 /* Assets.xcassets */,
 				786A45A82005BD3E00E34BB2 /* LaunchScreen.storyboard */,
 				786A45AB2005BD3E00E34BB2 /* Info.plist */,
 			);
 			path = HUD_D;
+			sourceTree = "<group>";
+		};
+		CEF5ED47D1494A04E03BD0EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6004A3D1592C451EE4886F6C /* Pods-HUD_D.debug.xcconfig */,
+				70BA189872ACEE666309FDE1 /* Pods-HUD_D.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 786A45AE2005BD3E00E34BB2 /* Build configuration list for PBXNativeTarget "HUD_D" */;
 			buildPhases = (
+				44B03400178D048854607B9A /* [CP] Check Pods Manifest.lock */,
 				786A45982005BD3E00E34BB2 /* Sources */,
 				786A45992005BD3E00E34BB2 /* Frameworks */,
 				786A459A2005BD3E00E34BB2 /* Resources */,
+				FAEB983B0D3B08F869954E25 /* [CP] Embed Pods Frameworks */,
+				FA0C9433D40411708E88CC62 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +161,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		44B03400178D048854607B9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HUD_D-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA0C9433D40411708E88CC62 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HUD_D/Pods-HUD_D-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAEB983B0D3B08F869954E25 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-HUD_D/Pods-HUD_D-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Cupcake/Cupcake.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cupcake.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HUD_D/Pods-HUD_D-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		786A45982005BD3E00E34BB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +224,7 @@
 			files = (
 				786A45A22005BD3E00E34BB2 /* ViewController.swift in Sources */,
 				786A45A02005BD3E00E34BB2 /* AppDelegate.swift in Sources */,
+				786A45B22005BDFD00E34BB2 /* UAVProgressHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +359,7 @@
 		};
 		786A45AF2005BD3E00E34BB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6004A3D1592C451EE4886F6C /* Pods-HUD_D.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +375,7 @@
 		};
 		786A45B02005BD3E00E34BB2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70BA189872ACEE666309FDE1 /* Pods-HUD_D.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
